@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Inter:wght@400;500;600&family=Jomolhari&family=Lato:wght@400;700&family=Montserrat:wght@400;500;600&family=Noto+Sans+Display:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <!--header wrap start-->
+        <header class="header-wrap">
+            <img class="header-active" src="img/Frame.png" alt="header active">
+            <div class="header-line"></div>
+            <div class="common-wrap">
+                     <nav class="nav-wrap">
+                        <div class="logo">
+                            <a href="#"><img src="img/Emergera.png" alt="logo"></a>
+                        </div>
+                        <ul>
+                            <li><a href="who-we-are.html">Who we are</a></li>
+                            <li><a href="#">What we do</a></li>
+                            <li><a href="#">Industries</a></li>
+                            <li><a href="#">Our brands</a></li>
+                        </ul>
+                        <a href="#" class="Contact-btn">Contact us</a>
+                        <div class="toggle-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </nav>
+                    <div class="dropdown-menu">
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">What we do</a></li>
+                        <li><a href="#">Industries</a></li>
+                        <li><a href="#">Our brands</a></li>
+                        <a href="#" class="Contact-btn-acitve">Contact us</a>
+                    </div>
+                    <script>
+                        const togglebtn = document.querySelector('.toggle-btn')
+                        const togglebtnicon = document.querySelector('.toggle-btn i')
+                        const dropdownmenu = document.querySelector('.dropdown-menu')
+
+                        togglebtn.onclick = function() {
+                            dropdownmenu.classList.toggle('open')
+                            const isopen = dropdownmenu.classList.contains('open')
+
+                            togglebtn.classList= isopen
+                            ?'fa-solid fa-xmark'
+                            :'fa-solid fa-bars'
+                        }
+                    </script>
+                <div class="hero-item">
+                    <h1>Effective <span>Action</span> begins with Clear Thinking</h1>
+                    <p>Emergera is a trusted research and advisory firm that leverages experience and industry involvement to deliver pragmatic guidance in executing data and analytics strategies.</p>
+                    <div class="arrow-btn">
+                        <a href="#">Contact Us</a>
+                        <a href="#"><img src="img/Arrow forward.svg" alt="arrow"></a>
+                    </div>
+                </div>
+                <div class="hero-inner">
+                    <h4>Scroll down</h4>
+                    <span class="scroll-item"></span>
+                    <span class="scroll-inner"></span>
+                    <span class="scroll-main"></span>
+                </div>
+            </div>
+        </header>
+        <!--header wrap end-->
+
+        <!--business wrap start-->
+        <section class="business-global-wrap">
+            <div class="common-wrap">
+                <div class="business-wrap">
+                    <div class="business-head">
+                        <p>Emergera is a <span>purpose-led</span>, global business and technology consulting company. The future of work is a flexible, adaptable, and resilent workforce.</p>
+                    </div>
+                    <div class="who-we-are-wrap">
+                        <h5 class="who-are"><span>WHO</span> WE ARE</h5>
+                        <div class="who-are-inner">
+                            <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio.Proin nec augue vitae sapien placerat efficitur. Aliquam iaculis, nisi quis hendrerit lacinia, risus urna aliquam eros, ac aliquet quam libero id velit. </p>
+                            <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur. </p>
+                        </div>
+                    </div>
+                    <div class="our-capabllities-wrap">
+                        <img src="img/rectangle.png" alt="content">
+                    </div>
+                </div>
+                <div class="our-capabllities-item">
+                    <div class="our-copabllities-inner">
+                        <h4><span>OUR</span> CAPABILITIES</h4>
+                        <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio.Proin nec augue vitae sapien placerat efficitur. </p>
+                    </div>
+                    <div class="main-copabllities">
+                        <span class="branding"><img src="img/icon.svg" alt="icon">Branding & Corporate Identity</span>
+                        <span><img src="img/icon.svg" alt="icon">Marketing Return on Investment</span>
+                        <span><img src="img/icon.svg" alt="icon">Consumer & Shopper Insights</span>
+                        <span><img src="img/icon.svg" alt="icon">Sales & Channel Management</span>
+                        <span><img src="img/icon.svg" alt="icon">Organization & Capabilities</span>
+                    </div>
+                </div>
+                <div class="what-we-wrap">
+                    <h5><span>WHAT</span> WE DO</h5>
+                    <h3>Here is how we help our clients:</h3>
+                </div>
+            </div>
+            <div class="main-business-wrap">
+                <div class="common-wrap">
+                    <div class="main-business">
+                        <div class="business-item-active">
+                            <img src="img/Rectangle 1277.png" alt="business">
+                        </div>
+                        <div class="business-inner">
+                            <h4>Business Strategy</h4>
+                        </div>
+                        <div class="business-active">
+                            <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur. Fusce ac nula congue, moletie felis eget, vestibulum ligula. Proin aliquet metus odio. </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="main-business-wrap">
+                <div class="common-wrap">
+                    <div class="main-business">
+                        <div class="business-item-active">
+                            <img src="img/Rectangle 1278.png" alt="business">
+                        </div>
+                        <div class="business-inner">
+                            <h4>Technology Strategy</h4>
+                        </div>
+                        <div class="business-active">
+                            <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur. </p>
+                            <p> Fusce ac nula congue, moletie felis eget, vestibulum ligula. Proin aliquet metus odio.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="main-business-wrap">
+                <div class="common-wrap">
+                    <div class="main-business">
+                        <div class="business-item-active">
+                            <img src="img/Rectangle 1279.png" alt="business">
+                        </div>
+                        <div class="business-inner">
+                            <h4>Solution Design & Development</h4>
+                        </div>
+                        <div class="business-active">
+                            <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur. Fusce ac nula congue, moletie felis eget, vestibulum ligula. Proin aliquet metus odio. </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="main-business-wrap">
+                <div class="common-wrap">
+                    <div class="business-corporate">
+                        <div class="business-item-active">
+                            <img src="img/Rectangle 1280.png" alt="business">
+                        </div>
+                        <div class="business-inner">
+                            <h4>Corporate Branding</h4>
+                        </div>
+                        <div class="business-active">
+                            <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur. Fusce ac nula congue, moletie felis eget, vestibulum ligula. Proin aliquet metus odio. </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>  
+        </section>
+        <!--business wrap end-->
+
+        <!--we operate wrap start-->
+        <section class="we-operate-wrap">
+            <div class="common-wrap">
+                <div class="we-operate-head">
+                    <h3>This is where we operate:</h3>
+                </div>
+                <div class="we-operate-item">
+                    <div class="our-industrtes-wrap">
+                        <span>OUR INDUSTRIES</span>
+                        <h4>01</h4>
+                        <h3>Healthcare & Life Sciences</h3>
+                        <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur. Aliquam iaculis, nisi quis hendrerit.</p>
+                        <div class="our-industrtes-inner">
+                            <h5>Prev/Next</h5>
+                            <img src="img/slder.svg" alt="slder">
+                            <img src="img/slder-right.svg" alt="slder">
+                        </div>
+                    </div>
+                    <div class="we-operate-inner-wrap">
+                        <div class="operate-inner">
+                            <img src="img/Rectangle 1267.png" alt="">
+                        </div>
+                        <div class="we-operate-inner">
+                            <img src="img/Rectangle 1266.png" alt="">
+                            <span>Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="purpose-led-wrap">
+                    <div class="purpose-led-item">
+                        <p> Emergera is a <span>purpose led</span>, global business and technology consulting company. The future work is a flexible, adaptable, and resilent workforce.</p>
+                    </div>
+                    <div class="with-us">
+                        <a href="#">Get in touch with us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--we operate wrap end-->
+
+        <!--predictera brands wrap start-->
+        <section class="predictera-brands-wrap">
+            <div class="common-wrap">
+                <div class="main-predictera">
+                    <div class="predictera-item">
+                        <h4><span>PRE</span>DDICTERA BRANDS</h4>
+                        <P>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur.</P>
+                        <P> Aliquam iaculis, nisi quis hendrerit lacinia, risus urna aliquam eros, ac aliquet quam libero id velit.</P>
+                    </div>
+                    <div class="predictera-inner">
+                        <div class="cxoera-item">
+                            <img src="img/cxoera.png" alt="cxoera">
+                        </div>
+                        <div class="cxoera-inner">
+                            <div class="main-cxoera-inner">
+                                <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur</p>
+                                <p>Aliquam iaculis, nisi quis hendrerit lacinia, risus urna aliquam eros, ac aliquet quam libero id velit. </p>
+                            </div>
+                            <div class="join-cxoera">
+                                <a href="#">Join CXOEra</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="predictera-inner">
+                        <div class="cxoera-item">
+                            <img src="img/dreamlan.png" alt="">
+                        </div>
+                        <div class="cxoera-inner">
+                            <div class="main-cxoera-inner">
+                                <p>Maecenas id ornare dolor. In hac habitasse platea dictumst. Fusce ac nulla congue, molestie felis eget, vestibulum ligula. Proin aliquet metus odio. Proin nec augue vitae sapien placerat efficitur</p>
+                                <p>Aliquam iaculis, nisi quis hendrerit lacinia, risus urna aliquam eros, ac aliquet quam libero id velit. </p>
+                            </div>
+                            <div class="join-cxoera">
+                                <a href="#">Inquire DreamlandLab</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--predictera brands wrap start-->
+
+        <!--with emergera wrap start-->
+        <section class="with-emergera-wrap">
+            <figure>
+                <img src="img/image 46.png" alt="bg">
+            </figure>
+            <div class="common-wrap">
+                <div class="main-with-emergera">
+                    <div class="Get-in-touch">
+                        <h3>Get in touch with Emergera.</h3>
+                    </div>
+                    <div class="with-emergera-item">
+                        <h3>Emergera Summit</h3>
+                        <h3>-</h3>
+                        <h3>Email: <span>contact@predictera.com</span></h3>
+                        <h3>Phone: <span> +1 (245) 443 4385</span></h3>
+                        <h4>Address:</h4>
+                        <span>13656 Main St, Bellevue, WA 98005, 
+                            United States of America</span>
+                    </div>
+                    <div class="Get-in-touch-wrap">
+                        <form class="submite-area">
+                            <div class="first-name">
+                                <label for="name">First Name</label>
+                                <input type="text" required placeholder="john" id="first">
+                            </div>
+                            <div class="last-name">
+                                <label for="name">Last Name</label>
+                                <input type="text" required placeholder="Doe" id="last">
+                            </div>
+                            <div class="email-address">
+                                <label for="email address">Email Address:</label>
+                                <input type="text" required placeholder="example@domain.com" id="email address">
+                            </div>
+                            <div class="company">
+                                <label for="company">Company:</label>
+                                <input type="text" required placeholder="Your Company" id="company">
+                            </div>
+                            <div class="message-box">
+                                <label for="message">MESSAGE</label>
+                                <textarea name="message" id="message"rows="20" placeholder="Your Message here..." class="desk" ></textarea>
+                                <textarea name="message" id="message"rows="10" placeholder="Your Message here..." class="mobi"></textarea>
+                            </div>
+                            <div class="submit-message">
+                                <a href="#">Submit Message</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>             
+            </div>
+        </section>
+        <!--with emergera wrap end-->
+
+        <!--footer start-->
+        <footer class="footer">
+            <div class="common-wrap">
+                <div class="footer-item">
+                    <div class="footer-emergera">
+                        <h3>Emergera</h3>
+                        <h4>Emergera Summit</h4>
+                        <h6>13656 Main St, Bellevue, WA 98005, United States of Amerca</h6>
+                        <h6>— </h6>
+                        <h6>Tel. +1 (245) 443 4385 Email. contact@predictera.com</h6>
+                    </div>
+                    <div class="main-footer">
+                        <div class="footer-inner">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Who we are</a></li>
+                                <li><a href="#">What we do</a></li>
+                                <li><a href="#">Industries</a></li>
+                                <li><a href="#">Our brands</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="our-brand">
+                            <h4>Visit our brands</h4>
+                            <div class="our-brand-inner">
+                                <a href="#"><img src="img/cxoera.png" alt="img"></a>
+                                <a href="#"><img src="img/dreamlan.png" alt="img"></a>
+                            </div>
+                        </div>
+                        <form class="email-submit">
+                            <div class="email-newsletter">
+                                <label for="Email">Email Newsletter:</label>
+                                <input type="text" required placeholder="name@domain.com" id="email">
+                            </div>
+                            <p>Sign Up to our website to follow all of our new projects, news, consultation, blogs, and looking to do next.</p>
+                        </form>
+                    </div>
+                    <div class="footer-media">
+                        <h3>© Predictera 2022</h3>
+                        <div class="media-item">
+                            <h5>Social Media:</h5>
+                            <a href="#"><img src="img/linkedin.svg" alt="">LinkedIn</a> 
+                            <a href="#"><img src="img/twitter.svg" alt="">Twitter</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+    </main>
+</body>
+</html>

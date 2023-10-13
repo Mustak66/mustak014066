@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>who-we-are</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Inter:wght@400;500;600&family=Jomolhari&family=Lato:wght@400;700&family=Montserrat:wght@400;500;600&family=Noto+Sans+Display:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header class="header-wrap">
+            <img class="header-bg" src="img/header-bg.png" alt="header active">
+            <div class="header-line"></div>
+            <div class="common-wrap">
+                <nav class="nav-wrap">
+                    <div class="logo">
+                        <a href="#"><img src="img/Emergera.png" alt="logo"></a>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Who we are</a></li>
+                        <li><a href="#">What we do</a></li>
+                        <li><a href="#">Industries</a></li>
+                        <li><a href="#">Our brands</a></li>
+                    </ul>
+                    <a href="#" class="Contact-btn">Contact us</a>
+                    <div class="toggle-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <div class="dropdown-menu">
+                    <li><a href="#">Who we are</a></li>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Industries</a></li>
+                    <li><a href="#">Our brands</a></li>
+                    <a href="#" class="Contact-btn-acitve">Contact us</a>
+                </div>
+                <script>
+                    const togglebtn = document.querySelector('.toggle-btn')
+                    const togglebtnicon = document.querySelector('.toggle-btn i')
+                    const dropdownmenu = document.querySelector('.dropdown-menu')
+
+                    togglebtn.onclick = function() {
+                        dropdownmenu.classList.toggle('open')
+                        const isOpen = dropdownmenu.classList.contains('open')
+
+                        togglebtn.classList= isOpen
+                        ?'fa-solid fa-xmark'
+                        :'fa-solid fa-bars'
+                    }
+                </script>
+                <div class="hero-privacy">
+                    <h1>Privacy Policy <span>for</span> Predictera</h1>                           
+                </div>
+        </header>
+        <section class="your-information">
+            <div class="common-wrap">
+                <div class="information-item">
+                    <div class="information-see">
+                        <p>At Predictera, one of our main priorities is the privacy of our visitors. This privacy policy document contains types of information that is collected and recorded by Predictera and how we use it.</p>
+                        <span>If you have additional questions or require more information abous our Privacy Policy, do not hesitate to <a href="#">contact us</a>.</span>
+                    </div>
+                    <div class="who-information">
+                        <h3>How we use your information</h3>
+                        <h5>We use the information we collect in various ways, for example:</h5>
+                        <ul>
+                            <li><a href="#">Improve, Operate, and Maintain our website</a></li>
+                            <li><a href="#">For marketing and promotional purposes we will send you a email</a></li>
+                            <li><a href="#">Find and prevend fraud</a></li>
+                            <li><a href="#">Understand and analyze how you use our website</a></li>
+                            <li><a href="#">We will provide you with updates and other information relating to the website</a></li>
+                        </ul>
+                    </div>
+                    <div class="information-inner">
+                        <h3>Options</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in facilisis tellus, id sagittis tellus. Quisque lobortis, justo non malesuada molestie, risus dui mattis ligula, nec maximus arcu augue quis diam. Nullam non arcu et ligula finibus aliquet quis non elit. Vivamus eu condimentum eros. Nulla vitae nisi commodo, lobortis massa id, rutrum eros. Vivamus convallis libero a velit imperdiet, vitae commodo nulla placerat. Donec laoreet tellus eget efficitur efficitur. Duis urna arcu, lobortis sit amet gravida eget, congue ut augue.</p>
+                    </div>
+                    <div class="information-inner">
+                        <h3>How we use your information</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in facilisis tellus, id sagittis tellus. Quisque lobortis, justo non malesuada molestie, risus dui mattis ligula, nec maximus arcu augue quis diam. Nullam non arcu et ligula finibus aliquet quis non elit. Vivamus eu condimentum eros. Nulla vitae nisi commodo, lobortis massa id, rutrum eros. Vivamus convallis libero a velit imperdiet, vitae commodo nulla placerat. Donec laoreet tellus eget efficitur efficitur. Duis urna arcu, lobortis sit amet gravida eget, congue ut augue. Fusce posuere at velit quis accumsan. Sed est quam, sodales non justo eu, ultrices tincidunt nunc. Sed ac auctor ex. Nulla iaculis sem ligula, sit amet placerat elit sollicitudin dapibus Sed id</p>
+                        <div class="active-information">
+                               <p>Nulla arcu nec mi laoreet, sed vehicula est vestibulum. Integer eget suscipit velit.
+                                Praesent bibendum blandit venenatis. Aliquam faucibus ligula nec quam imperdiet, et mattis elit tincidunt. Pellentesque interdum molestie eros, sed viverra erat consequat vel. In hac habitasse platea dictumst. Praesent at ex magna. Aenean iaculis arcu quis turpis fermentum consectetur. Fusce ac nisl lectus. Vivamus tincidunt elit vitae finibus pulvinar.</p>
+                                <p>Ut ac dui eget justo volutpat laoreet. Phasellus sit amet erat a quam fringilla fermentum. Vivamus turpis erat, malesuada et lacus ut, mollis lacinia erat. Integer scelerisque vitae sem et cursus. Aliquam fermentum vulputate arcu vitae vehicula. Nullam a dui posuere, faucibus metus at, rutrum leo. Aenean sed ligula ac est rutrum facilisis vel non orci. Duis est dolor, sollicitudin sit amet sapien gravida, efficitur pretium enim.</p>
+                        </div>
+                    </div>
+                    <div class="information-inner">
+                        <h3>Data protection rights</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in facilisis tellus, id sagittis tellus. Quisque lobortis, justo non malesuada molestie, risus dui mattis ligula, nec maximus arcu augue quis diam. Nullam non arcu et ligula finibus aliquet quis non elit. Vivamus eu condimentum eros. Nulla vitae nisi commodo, lobortis massa id, rutrum eros. Vivamus convallis libero a velit imperdiet, vitae commodo nulla.</p>
+                    </div>
+                    <div class="information-inner">
+                        <h3>Changes</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in facilisis tellus, id sagittis tellus. Quisque lobortis, justo non malesuada molestie, risus dui mattis ligula, nec maximus arcu augue quis diam. Nullam non arcu et ligula finibus aliquet quis non elit. Vivamus eu condimentum eros. Nulla vitae nisi commodo, lobortis massa id, rutrum eros. Vivamus convallis libero a velit imperdiet, vitae commodo nulla.</p>
+                    </div>
+                    <div class="information-purpose">
+                        <h3>Purpose</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in facilisis tellus, id sagittis tellus. Quisque lobortis, justo non malesuada molestie, risus dui mattis ligula, nec maximus arcu augue quis diam. Nullam non arcu et ligula finibus aliquet quis non elit. Vivamus eu condimentum eros. Nulla vitae nisi commodo,.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="common-wrap">
+                <div class="footer-item">
+                    <div class="footer-emergera">
+                        <h3>Emergera</h3>
+                        <h4>Emergera Summit</h4>
+                        <h6>13656 Main St, Bellevue, WA 98005, United States of Amerca</h6>
+                        <h6>— </h6>
+                        <h6>Tel. +1 (245) 443 4385 Email. contact@predictera.com</h6>
+                    </div>
+                    <div class="main-footer">
+                        <div class="footer-inner">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Who we are</a></li>
+                                <li><a href="#">What we do</a></li>
+                                <li><a href="#">Industries</a></li>
+                                <li><a href="#">Our brands</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="our-brand">
+                            <h4>Visit our brands</h4>
+                            <div class="our-brand-inner">
+                                <a href="#"><img src="img/cxoera.png" alt="img"></a>
+                                <a href="#"><img src="img/dreamlan.png" alt="img"></a>
+                            </div>
+                        </div>
+                        <form class="email-submit">
+                            <div class="email-newsletter">
+                                <label for="Email">Email Newsletter:</label>
+                                <input type="text" required placeholder="name@domain.com" id="email">
+                            </div>
+                            <p>Sign Up to our website to follow all of our new projects, news, consultation, blogs, and looking to do next.</p>
+                        </form>
+                    </div>
+                    <div class="footer-media">
+                        <h3>© Predictera 2022</h3>
+                        <div class="media-item">
+                            <h5>Social Media:</h5>
+                            <a href="#"><img src="img/linkedin.svg" alt="">LinkedIn</a> 
+                            <a href="#"><img src="img/twitter.svg" alt="">Twitter</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
